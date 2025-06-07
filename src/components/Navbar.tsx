@@ -1,7 +1,6 @@
-
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { ShoppingCart, User, Menu, X } from 'lucide-react';
+import { ShoppingCart, Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useCart } from '@/context/CartContext';
 import Cart from '@/components/Cart';
@@ -57,7 +56,7 @@ const Navbar = () => {
             </div>
 
             {/* Right side buttons */}
-            <div className="hidden md:flex items-center space-x-4">
+            <div className="hidden md:flex items-center space-x-4 ">
               <Button
                 variant="ghost"
                 size="icon"
@@ -71,6 +70,7 @@ const Navbar = () => {
                   </span>
                 )}
               </Button>
+              {/* Admin button hidden
               <Button
                 variant="ghost"
                 size="icon"
@@ -79,10 +79,24 @@ const Navbar = () => {
               >
                 <User className="h-5 w-5" />
               </Button>
+              */}
             </div>
 
-            {/* Mobile menu button */}
-            <div className="md:hidden">
+            {/* Mobile menu and cart buttons */}
+            <div className="md:hidden flex items-center space-x-2">
+              <Button
+                variant="ghost"
+                size="icon"
+                onClick={() => setIsCartOpen(true)}
+                className="relative text-white hover:text-luxury-gold"
+              >
+                <ShoppingCart className="h-5 w-5" />
+                {cartItemsCount > 0 && (
+                  <span className="absolute -top-2 -right-2 bg-luxury-gold text-navy-deep text-xs rounded-full h-5 w-5 flex items-center justify-center font-bold">
+                    {cartItemsCount}
+                  </span>
+                )}
+              </Button>
               <Button
                 variant="ghost"
                 size="icon"
@@ -127,35 +141,7 @@ const Navbar = () => {
               >
                 Help
               </Link>
-              <div className="flex items-center space-x-4 px-3 py-2">
-                <Button
-                  variant="ghost"
-                  size="icon"
-                  onClick={() => {
-                    setIsCartOpen(true);
-                    setIsMenuOpen(false);
-                  }}
-                  className="relative text-white hover:text-luxury-gold"
-                >
-                  <ShoppingCart className="h-5 w-5" />
-                  {cartItemsCount > 0 && (
-                    <span className="absolute -top-2 -right-2 bg-luxury-gold text-navy-deep text-xs rounded-full h-5 w-5 flex items-center justify-center font-bold">
-                      {cartItemsCount}
-                    </span>
-                  )}
-                </Button>
-                <Button
-                  variant="ghost"
-                  size="icon"
-                  onClick={() => {
-                    navigate('/admin');
-                    setIsMenuOpen(false);
-                  }}
-                  className="text-white hover:text-luxury-gold"
-                >
-                  <User className="h-5 w-5" />
-                </Button>
-              </div>
+              {/* Cart and admin buttons removed from here for mobile */}
             </div>
           </div>
         )}
