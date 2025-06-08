@@ -52,6 +52,12 @@ const Navbar = () => {
                 >
                   Help
                 </Link>
+                <Link
+                  to="/policies"
+                  className="hover:text-luxury-gold px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                >
+                  Policies
+                </Link>
               </div>
             </div>
 
@@ -140,6 +146,13 @@ const Navbar = () => {
                 onClick={() => setIsMenuOpen(false)}
               >
                 Help
+              </Link>
+              <Link
+                to="/policies"
+                className="hover:text-luxury-gold block px-3 py-2 rounded-md text-base font-medium transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Policies
               </Link>
               {/* Cart and admin buttons removed from here for mobile */}
             </div>
