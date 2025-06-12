@@ -156,9 +156,13 @@ const Admin = () => {
   };
 
   const handleImagesChange = (images: string) => {
-    const imagesArray = images.split('\n').filter(img => img.trim());
-    setFormData(prev => ({ ...prev, images: imagesArray }));
-  };
+  const imagesArray = images
+    .split('\n')
+    .map(img => img.trim())
+    .filter(img => img); // removes empty lines
+  setFormData(prev => ({ ...prev, images: imagesArray }));
+};
+
 
   const handleOrderStatusUpdate = async (orderId: string, status: Order['status']) => {
     try {
