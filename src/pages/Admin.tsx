@@ -157,11 +157,12 @@ const Admin = () => {
 
   const handleImagesChange = (images: string) => {
   const imagesArray = images
-    .split('\n')
+    .split(/\s+/) // splits on any whitespace: spaces, tabs, newlines
     .map(img => img.trim())
-    .filter(img => img); // removes empty lines
+    .filter(img => img); // removes empty strings
   setFormData(prev => ({ ...prev, images: imagesArray }));
 };
+
 
 
   const handleOrderStatusUpdate = async (orderId: string, status: Order['status']) => {
