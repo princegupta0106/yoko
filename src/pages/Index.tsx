@@ -76,7 +76,7 @@ const Index = () => {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-navy-deep mb-4">Featured Collection</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Handpicked timepieces that represent the pinnacle of watchmaking excellence
+              Handpicked timepieces that represent the pinnacle of crafting excellence
             </p>
           </div>
 

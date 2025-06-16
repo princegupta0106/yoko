@@ -22,7 +22,7 @@ const Navbar = () => {
             {/* Logo */}
             <div className="flex-shrink-0">
               <Link to="/" className="text-xl font-bold text-luxury-gold">
-                Tick & Trend
+                YOKO
               </Link>
             </div>
 
@@ -52,6 +52,12 @@ const Navbar = () => {
                   className="hover:text-luxury-gold px-3 py-2 rounded-md text-sm font-medium transition-colors"
                 >
                   Help
+                </Link>
+                <Link
+                  to="/help"
+                  className="hover:text-luxury-gold px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                >
+                  Policies
                 </Link>
               </div>
             </div>
