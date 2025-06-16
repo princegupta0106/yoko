@@ -20,11 +20,16 @@ const Navbar = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
-            <div className="flex-shrink-0">
-              <Link to="/" className="text-xl font-bold text-luxury-gold">
-                YOKO
+            <div className="flex-shrink-0 h-10 w-10">
+              <Link to="/">
+                <img
+                  src="/favicon.jpg"
+                  alt="Logo"
+                  className="h-full w-full object-contain"
+                />
               </Link>
             </div>
+
 
             {/* Desktop Navigation */}
             <div className="hidden md:block">
