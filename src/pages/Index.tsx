@@ -57,7 +57,7 @@ const Index = () => {
                 <Shield className="w-8 h-8 text-navy-deep" />
               </div>
               <h3 className="text-xl font-semibold text-navy-deep mb-2">Authentic Guarantee</h3>
-              <p className="text-gray-600">100% authentic watches with manufacturer warranty</p>
+              <p className="text-gray-600">100% authentic products with manufacturer warranty</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-luxury-gold rounded-full flex items-center justify-center mx-auto mb-4">
