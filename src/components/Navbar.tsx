@@ -23,7 +23,7 @@ const Navbar = () => {
             <div className="flex-shrink-0 h-10 w-10">
               <Link to="/">
                 <img
-                  src="/favicon.jpg"
+                  src="/favicon.png"
                   alt="Logo"
                   className="h-full w-full object-contain"
                 />
