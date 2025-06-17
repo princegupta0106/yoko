@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { ShoppingCart, User, Menu, X } from 'lucide-react';
@@ -30,7 +29,6 @@ const Navbar = () => {
               </Link>
             </div>
 
-
             {/* Desktop Navigation */}
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">
@@ -59,7 +57,7 @@ const Navbar = () => {
                   Help
                 </Link>
                 <Link
-                  to="/help"
+                  to="/policies"
                   className="hover:text-luxury-gold px-3 py-2 rounded-md text-sm font-medium transition-colors"
                 >
                   Policies
@@ -73,7 +71,7 @@ const Navbar = () => {
                 variant="ghost"
                 size="icon"
                 onClick={() => setIsCartOpen(true)}
-                className="relative text-white hover:text-luxury-gold"
+                className={`relative hover:text-luxury-gold ${isCartOpen ? 'text-black' : 'text-white'}`}
               >
                 <ShoppingCart className="h-5 w-5" />
                 {cartItemsCount > 0 && (
@@ -93,7 +91,21 @@ const Navbar = () => {
             </div>
 
             {/* Mobile menu button */}
-            <div className="md:hidden">
+            <div className="md:hidden flex items-center space-x-2">
+              {/* Mobile cart button */}
+              <Button
+                variant="ghost"
+                size="icon"
+                onClick={() => setIsCartOpen(true)}
+                className={`relative hover:text-luxury-gold ${isCartOpen ? 'text-black' : 'text-white'}`}
+              >
+                <ShoppingCart className="h-5 w-5" />
+                {cartItemsCount > 0 && (
+                  <span className="absolute -top-2 -right-2 bg-luxury-gold text-navy-deep text-xs rounded-full h-5 w-5 flex items-center justify-center font-bold">
+                    {cartItemsCount}
+                  </span>
+                )}
+              </Button>
               <Button
                 variant="ghost"
                 size="icon"
@@ -138,35 +150,13 @@ const Navbar = () => {
               >
                 Help
               </Link>
-              <div className="flex items-center space-x-4 px-3 py-2">
-                <Button
-                  variant="ghost"
-                  size="icon"
-                  onClick={() => {
-                    setIsCartOpen(true);
-                    setIsMenuOpen(false);
-                  }}
-                  className="relative text-white hover:text-luxury-gold"
-                >
-                  <ShoppingCart className="h-5 w-5" />
-                  {cartItemsCount > 0 && (
-                    <span className="absolute -top-2 -right-2 bg-luxury-gold text-navy-deep text-xs rounded-full h-5 w-5 flex items-center justify-center font-bold">
-                      {cartItemsCount}
-                    </span>
-                  )}
-                </Button>
-                {/* <Button
-                  variant="ghost"
-                  size="icon"
-                  onClick={() => {
-                    navigate('/admin');
-                    setIsMenuOpen(false);
-                  }}
-                  className="text-white hover:text-luxury-gold"
-                >
-                  <User className="h-5 w-5" />
-                </Button> */}
-              </div>
+              <Link
+                to="/policies"
+                className="hover:text-luxury-gold block px-3 py-2 rounded-md text-base font-medium transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Policies
+              </Link>
             </div>
           </div>
         )}

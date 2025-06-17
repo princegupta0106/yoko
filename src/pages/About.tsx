@@ -5,16 +5,16 @@ import { Award, Users, Globe, Heart } from 'lucide-react';
 const About = () => {
   const stats = [
     { label: 'Years of Excellence', value: '25+' },
-    { label: 'Happy Customers', value: '10,000+' },
+    { label: 'Happy Customers', value: '5,000+' },
     { label: 'Luxury Brands', value: '50+' },
-    { label: 'Countries Served', value: '15+' },
+    { label: 'Regions Served', value: '15+' },
   ];
 
   const values = [
     {
       icon: Award,
       title: 'Excellence',
-      description: 'We maintain the highest standards in every timepiece we offer, ensuring each watch meets our rigorous quality criteria.'
+      description: 'Yoko stands for excellence — with top-tier quality, trend-focused designs, and uncompromised standards in every product we deliver.'
     },
     {
       icon: Users,
@@ -24,7 +24,7 @@ const About = () => {
     {
       icon: Globe,
       title: 'Heritage',
-      description: 'Our passion for horological artistry spans generations, connecting traditional craftsmanship with modern innovation.'
+      description: 'Rooted in passion, built with purpose — Yoko’s heritage lies in blending timeless style with modern innovation.'
     },
     {
       icon: Heart,
@@ -39,11 +39,12 @@ const About = () => {
       <section className="bg-navy-deep text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            Our <span className="text-luxury-gold">Story</span>
+             <span className="text-luxury-gold">What YOKO Means
+</span>
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            For over 25 years, TimePiece Boutique has been India's premier destination for luxury timepieces, 
-            combining traditional horological expertise with modern retail excellence.
+            YOKO isn’t just a brand — it’s a blend of two passionate minds: Yash and Kush.
+The name stands for unity, creativity, and a shared dream to bring trendsetting style and smart living to everyone. From our initials to your inbox, YOKO reflects our personal touch, trust, and taste.
           </p>
         </div>
       </section>
@@ -69,27 +70,26 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold text-navy-deep mb-6">A Legacy of Time</h2>
+              <h2 className="text-3xl font-bold text-navy-deep mb-6 ">A Legacy of Time</h2>
               <div className="space-y-4 text-gray-700">
                 <p>
-                  Founded in 1999 by master horologist Rajesh Gupta, TimePiece Boutique began as a small 
-                  workshop in Mumbai's jewelry district. What started as a passion for mechanical timepieces 
-                  has evolved into India's most trusted luxury watch retailer.
+                  Yoko started with a simple idea — to redefine lifestyle shopping. From late-night brainstorming sessions between Yash and Kush to our first few orders, we’ve built more than a brand — we’ve built trust.
+
                 </p>
                 <p>
-                  Our journey has been guided by three core principles: authenticity, excellence, and service. 
-                  Every timepiece in our collection is carefully selected and authenticated by our team of 
-                  certified horologists, ensuring our customers receive only the finest watches.
+                  Over the years, our commitment to quality, affordability, and trend has turned Yoko into a go-to name for gadgets, fashion, and timeless watches. What began as a small venture has become a growing legacy — shaped by passion, powered by people.
+
+
                 </p>
                 <p>
-                  Today, we proudly serve customers across India and internationally, offering an unparalleled 
-                  selection of luxury timepieces from the world's most prestigious manufacturers.
+                  At Yoko, our story continues — with every product, every customer, and every click.
+
                 </p>
               </div>
             </div>
             <div className="aspect-square rounded-lg overflow-hidden">
               <img 
-                src="/placeholder.svg" 
+                src="/favicon.png" 
                 alt="Our workshop" 
                 className="w-full h-full object-cover"
               />

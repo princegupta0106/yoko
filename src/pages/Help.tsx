@@ -57,20 +57,23 @@ const Help = () => {
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600">
-                    We offer a 30-day return policy for all unworn watches in original condition. 
-                    Returns must include all original packaging and documentation.
+                    At Yoko, customer satisfaction is our top priority. If you receive a damaged product or an item that is different from what you ordered, we will promptly replace it with the correct one.
+
+We also offer a refund option, provided that the customer shares an unboxing video clearly showing the issue at the time of opening the package. This helps us ensure transparency and smooth resolution.
+
+For any return or refund requests, please contact our support team within 48 hours of delivery.
                   </p>
                 </CardContent>
               </Card>
 
               <Card>
                 <CardHeader>
-                  <CardTitle className="text-lg">Do you provide warranty?</CardTitle>
+                  <CardTitle className="text-lg">What types of products do you sell?
+</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600">
-                    Yes, all our watches come with manufacturer warranty ranging from 1-5 years 
-                    depending on the brand and model. Details are provided with each product.
+                    Yoko offers a curated range of trending gadgets, fashionable clothing, and master copy branded watches — all selected for style, function, and quality.
                   </p>
                 </CardContent>
               </Card>
@@ -89,12 +92,27 @@ const Help = () => {
 
               <Card>
                 <CardHeader>
-                  <CardTitle className="text-lg">Are your watches authentic?</CardTitle>
+                  <CardTitle className="text-lg">How do I contact customer support?
+</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600">
-                    Absolutely! We are authorized dealers and all our watches come with 
-                    authenticity certificates and original manufacturer warranty.
+                    You can reach us through WhatsApp, call, or our customer support email for any questions or issues. We aim to respond within 24 hours.
+                  </p>
+                </CardContent>
+              </Card>
+               <Card>
+                <CardHeader>
+                  <CardTitle className="text-lg">What is our Payment & Shipping Policy ?
+
+</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600">
+                    At Yoko, we offer both Cash on Delivery (COD) and Prepaid payment options to give you complete flexibility.
+No matter your choice, we ensure fast and reliable shipping all over India.
+
+Shop confidently — your convenience is our priority.
                   </p>
                 </CardContent>
               </Card>

@@ -1,37 +1,44 @@
-
 import { Testimonial } from '@/types';
 
 export const testimonials: Testimonial[] = [
   {
     id: '1',
-    name: 'Rajesh Kumar',
+    name: 'Yash Gupta',
     rating: 5,
-    comment: 'Exceptional quality and service. The Royal Heritage Classic exceeded my expectations. The craftsmanship is truly remarkable.',
-    date: '2024-05-15',
+    comment: 'Awesome and handy gadget—perfect for travel and refreshing clothes.',
+    date: '2024-06-17',
     verified: true
   },
   {
     id: '2',
-    name: 'Priya Sharma',
+    name: 'Kush Agrwal',
     rating: 5,
-    comment: 'Beautiful collection and fast delivery. Love my new Executive Gold watch. It\'s a perfect blend of luxury and elegance.',
-    date: '2024-05-10',
+    comment: 'Lightweight, good quality, durable—great value for money.',
+    date: '2024-06-17',
     verified: true
   },
   {
     id: '3',
-    name: 'Amit Patel',
-    rating: 4,
-    comment: 'Great customer service and authentic products. The SportMax Pro is perfect for my active lifestyle.',
-    date: '2024-05-08',
+    name: 'Dilip Chouhan',
+    rating: 5,
+    comment: 'Stylish smartwatch with built-in headphones—music on the go!',
+    date: '2024-06-17',
     verified: true
   },
   {
     id: '4',
-    name: 'Sneha Reddy',
+    name: 'Rajesh Soni',
     rating: 5,
-    comment: 'Absolutely stunning timepiece! The attention to detail is incredible. Highly recommend this store.',
-    date: '2024-05-05',
+    comment: 'Well built, classy, comfortable—watch worth every rupee.',
+    date: '2024-06-17',
+    verified: true
+  },
+  {
+    id: '5',
+    name: 'Subh Paliwal',
+    rating: 5,
+    comment: 'Strong audio, waterproof, battery lasts long—best earbuds I’ve used.',
+    date: '2024-06-17',
     verified: true
   }
 ];
