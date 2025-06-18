@@ -87,11 +87,11 @@ The name stands for unity, creativity, and a shared dream to bring trendsetting 
                 </p>
               </div>
             </div>
-            <div className="aspect-square rounded-lg overflow-hidden">
+            <div className="aspect-square rounded-lg overflow-hidden ">
               <img 
                 src="/favicon.png" 
                 alt="Our workshop" 
-                className="w-full h-full object-cover"
+                className="w-full object-cover"
               />
             </div>
           </div>
@@ -134,9 +134,9 @@ The name stands for unity, creativity, and a shared dream to bring trendsetting 
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { name: 'Rajesh Gupta', role: 'Founder & Master Horologist', image: '/placeholder.svg' },
-              { name: 'Priya Sharma', role: 'Head of Customer Experience', image: '/placeholder.svg' },
-              { name: 'Amit Patel', role: 'Technical Specialist', image: '/placeholder.svg' }
+              { name: 'Yash Sharma', role: 'Founder & Master Horologist', image: '/ghibli1.png' },
+              { name: 'Kush Goyal', role: 'Head of Customer Experience', image: '/ghibli2.png' },
+              // { name: 'Amit Patel', role: 'Technical Specialist', image: '/placeholder.svg' }
             ].map((member, index) => (
               <div key={index} className="text-center">
                 <div className="aspect-square rounded-lg overflow-hidden mb-4 bg-gray-200">
