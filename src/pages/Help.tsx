@@ -191,12 +191,12 @@ Shop confidently — your convenience is our priority.
             <div className="mt-8 space-y-4">
               <div>
                 <h3 className="font-semibold text-navy-deep">Email</h3>
-                <p className="text-gray-600">support@luxurywatchstore.com</p>
+                <p className="text-gray-600">yokofashion.yk@gmail.com</p>
               </div>
-              <div>
+              {/* <div>
                 <h3 className="font-semibold text-navy-deep">Phone</h3>
                 <p className="text-gray-600">+91 98765 43210</p>
-              </div>
+              </div> */}
               <div>
                 <h3 className="font-semibold text-navy-deep">Hours</h3>
                 <p className="text-gray-600">Monday - Saturday: 9:00 AM - 8:00 PM</p>
