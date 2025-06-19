@@ -4,10 +4,10 @@ import { Award, Users, Globe, Heart } from 'lucide-react';
 
 const About = () => {
   const stats = [
-    { label: 'Years of Excellence', value: '25+' },
+    { label: 'Years of Excellence', value: '11+' },
     { label: 'Happy Customers', value: '5,000+' },
     { label: 'Luxury Brands', value: '50+' },
-    { label: 'Regions Served', value: '11+' },
+    { label: 'Regions Served', value: '15+' },
   ];
 
   const values = [
