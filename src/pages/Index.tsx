@@ -45,7 +45,7 @@ const Index = () => {
       {/* Features Section */}
       <div className="bg-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="text-center">
               <div className="w-16 h-16 bg-luxury-gold rounded-full flex items-center justify-center mx-auto mb-4">
                 <Award className="w-8 h-8 text-navy-deep" />
@@ -53,13 +53,13 @@ const Index = () => {
               <h3 className="text-xl font-semibold text-navy-deep mb-2">Premium Quality</h3>
               <p className="text-gray-600">Luxury living made simple—from stylish apparel and cutting-edge gadgets to elegant timepieces, every piece is crafted for timeless qualityl</p>
             </div>
-            <div className="text-center">
+            {/* <div className="text-center">
               <div className="w-16 h-16 bg-luxury-gold rounded-full flex items-center justify-center mx-auto mb-4">
                 <Shield className="w-8 h-8 text-navy-deep" />
               </div>
               <h3 className="text-xl font-semibold text-navy-deep mb-2">Authentic Guarantee</h3>
               <p className="text-gray-600">100% authentic products with manufacturer warranty</p>
-            </div>
+            </div> */}
             <div className="text-center">
               <div className="w-16 h-16 bg-luxury-gold rounded-full flex items-center justify-center mx-auto mb-4">
                 <Clock className="w-8 h-8 text-navy-deep" />

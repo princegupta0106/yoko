@@ -7,7 +7,7 @@ const About = () => {
     { label: 'Years of Excellence', value: '25+' },
     { label: 'Happy Customers', value: '5,000+' },
     { label: 'Luxury Brands', value: '50+' },
-    { label: 'Regions Served', value: '15+' },
+    { label: 'Regions Served', value: '11+' },
   ];
 
   const values = [
@@ -134,8 +134,8 @@ The name stands for unity, creativity, and a shared dream to bring trendsetting 
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { name: 'Yash Sharma', role: 'Founder & Master Horologist', image: '/ghibli1.png' },
-              { name: 'Kush Goyal', role: 'Head of Customer Experience', image: '/ghibli2.png' },
+              { name: 'Yash Pal', role: 'Founder & Master Horologist', image: '/ghibli1.png' },
+              { name: 'Kush Gupta', role: 'Head of Customer Experience', image: '/ghibli2.png' },
               // { name: 'Amit Patel', role: 'Technical Specialist', image: '/placeholder.svg' }
             ].map((member, index) => (
               <div key={index} className="text-center">
