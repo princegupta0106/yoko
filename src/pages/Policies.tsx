@@ -9,16 +9,18 @@ const Policies = () => (
       <div className="text-lg leading-relaxed">
         For any queries or support, please contact us at:
         <br />
-        <strong>Phone:</strong> <a href="tel:+919999999999" className="text-blue-600 underline">+91 99999 99999</a>
+        <strong>Whatsapp:</strong> <a href="tel:+917017818266" className="text-blue-600 underline">+91 70178 18266</a>
         <br />
-        <strong>Email:</strong> <a href="mailto:support@timepieceboutique.com" className="text-blue-600 underline">support@timepieceboutique.com</a>
+         <strong>Whatsapp:</strong> <a href="tel:+917987615111" className="text-blue-600 underline">+91 79876 15111</a>
+        <br />
+        <strong>Email:</strong> <a href="mailto:yokofashion.yk@gmail.com" className="text-blue-600 underline">yokofashion.yk@gmail.com</a>
       </div>
     </section>
 
     <section className="mb-8">
       <h2 className="text-2xl font-bold mb-3 text-luxury-gold">Shipping Policy</h2>
       <div className="text-lg leading-relaxed">
-        We process and ship orders within 2-4 business days. Delivery times may vary based on your location. Tracking details will be provided once your order is shipped. We are not responsible for delays caused by courier services or unforeseen circumstances.
+        We process and ship orders within 3-4 business days. Delivery times may vary based on your location. Tracking details will be provided once your order is shipped. We are not responsible for delays caused by courier services or unforeseen circumstances.
       </div>
     </section>
 
