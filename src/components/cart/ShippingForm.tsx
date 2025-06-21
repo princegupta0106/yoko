@@ -42,7 +42,7 @@ const ShippingForm = ({
   // Calculate subtotal and other charges
   const subtotal = getCartTotal();
   const discountAmount = appliedCoupon?.discount_amount || 0;
-  const shippingCharge = paymentCollectionSettings?.shipping_charge || 50;
+  const shippingCharge = paymentCollectionSettings?.shipping_charge || 0; // Changed fallback to 0
   const shouldCollectShippingUpfront = paymentCollectionSettings?.collect_shipping_upfront || false;
   const shouldCollectOtherChargesUpfront = paymentCollectionSettings?.collect_other_charges_upfront || false;
 

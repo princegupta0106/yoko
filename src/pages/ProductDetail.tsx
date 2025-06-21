@@ -7,15 +7,17 @@ import { Badge } from '@/components/ui/badge';
 import { Star, ShoppingCart, Check, X, Minus, Plus } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import ImageCarousel from '@/components/ImageCarousel';
-
-// This will match the default for cart summary
-const DEFAULT_SHIPPING_CHARGE = 50;
+import { usePaymentCollectionSettings } from '@/hooks/usePaymentCollectionSettings';
 
 const ProductDetail = () => {
   const { id } = useParams<{ id: string }>();
   const { data: product, isLoading, error } = useProduct(id!);
+  const { data: paymentCollectionSettings } = usePaymentCollectionSettings();
   const { addToCart } = useCart();
   const { toast } = useToast();
+  
+  // Get shipping charge from settings, fallback to 0
+  const shippingCharge = paymentCollectionSettings?.shipping_charge || 0;
 
   // If there are additional charges (per MOQ unit), sum them up
   const getOtherCharges = () => {
@@ -70,7 +72,7 @@ const ProductDetail = () => {
 
   const itemTotal = product.price * quantity;
   const otherChargesPerQty = getOtherCharges() * quantity;
-  const finalTotal = itemTotal + DEFAULT_SHIPPING_CHARGE + otherChargesPerQty;
+  const finalTotal = itemTotal + shippingCharge + otherChargesPerQty;
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -172,7 +174,7 @@ const ProductDetail = () => {
                 </div>
                 <div className="flex justify-between text-sm">
                   <span>Shipping Charges</span>
-                  <span>{formatPrice(DEFAULT_SHIPPING_CHARGE)}</span>
+                  <span>{formatPrice(shippingCharge)}</span>
                 </div>
                 {otherChargesPerQty > 0 && (
                   <div className="flex justify-between text-sm">

@@ -32,7 +32,7 @@ const CartDialog = ({ isOpen, onClose }: CartDialogProps) => {
 
   const subtotal = getCartTotal();
   const discountAmount = appliedCoupon?.discount_amount || 0;
-  const shippingCharge = paymentCollectionSettings?.shipping_charge || 50;
+  const shippingCharge = paymentCollectionSettings?.shipping_charge || 0; // Changed fallback to 0
   const totalAmount = subtotal - discountAmount + shippingCharge;
 
   const handleQuantityUpdate = (productId: string, newQuantity: number) => {
