@@ -54,7 +54,7 @@ const Navbar = () => {
                   to="/help"
                   className="hover:text-luxury-gold px-3 py-2 rounded-md text-sm font-medium transition-colors"
                 >
-                  Help
+                  Contact Us
                 </Link>
                 <Link
                   to="/policies"
@@ -148,7 +148,7 @@ const Navbar = () => {
                 className="hover:text-luxury-gold block px-3 py-2 rounded-md text-base font-medium transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Help
+                Contact Us
               </Link>
               <Link
                 to="/policies"

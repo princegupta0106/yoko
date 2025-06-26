@@ -135,7 +135,7 @@ The name stands for unity, creativity, and a shared dream to bring trendsetting 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               { name: 'Yash Pal', role: 'Founder & Master Horologist', image: '/ghibli1.png' },
-              { name: 'Kush Gupta', role: 'Head of Customer Experience', image: '/ghibli2.png' },
+              { name: 'Kush kumar Gupta', role: 'Head of Customer Experience', image: '/ghibli2.png' },
               // { name: 'Amit Patel', role: 'Technical Specialist', image: '/placeholder.svg' }
             ].map((member, index) => (
               <div key={index} className="text-center">

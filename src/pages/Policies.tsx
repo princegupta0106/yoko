@@ -8,6 +8,7 @@ const Policies = () => (
       <h2 className="text-2xl font-bold mb-3 text-luxury-gold">Terms and Conditions</h2>
       <div className="text-lg leading-relaxed space-y-3">
         <p>Welcome to Yoko Watches (“we,” “our,” or “us”). By accessing or using our website, you agree to comply with and be bound by these Terms and Conditions.</p>
+        <p className="text-luxury-gold font-semibold">This Website is managed and run by Kush Kumar Gupta.</p>
 
         <p><strong>1. Use of the Website</strong><br />
         You must be at least 18 years old or accessing the site under the supervision of a parent or legal guardian.<br />
