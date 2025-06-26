@@ -78,7 +78,7 @@ const Products = () => {
               <SelectItem value="luxury">Luxury</SelectItem>
               <SelectItem value="sport">Sport</SelectItem>
               <SelectItem value="classic">Classic</SelectItem>
-              <SelectItem value="smart">Smart</SelectItem>
+             
             </SelectContent>
           </Select>
           
