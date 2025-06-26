@@ -35,9 +35,17 @@ export const useProduct = (id: string) => {
       
       if (error) throw error;
       
+      console.log("Raw product data from database:", data);
+      console.log("Images from database:", data.images);
+      
+      // Ensure images is always an array
+      const images = Array.isArray(data.images) ? data.images : 
+                     (data.images ? [data.images] : ['/placeholder.svg']);
+      
       // Convert database record to Product type
       return {
         ...data,
+        images: images,
         additional_charges: (data.additional_charges as unknown as AdditionalCharge[]) || []
       } as Product;
     },

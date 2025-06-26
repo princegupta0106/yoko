@@ -2,53 +2,97 @@ import React from "react";
 
 const Policies = () => (
   <div className="max-w-3xl mx-auto p-10 bg-white rounded-2xl shadow-lg mt-12 mb-12 border border-gray-200">
-    <h1 className="text-4xl font-extrabold mb-8 text-center text-navy-deep tracking-tight">Store Policies</h1>
+    <h1 className="text-4xl font-extrabold mb-8 text-center text-navy-deep tracking-tight">Policies</h1>
 
     <section className="mb-8">
-      <h2 className="text-2xl font-bold mb-3 text-luxury-gold">Contact Us</h2>
-      <div className="text-lg leading-relaxed">
-        For any queries or support, please contact us at:
-        <br />
-        <strong>Whatsapp:</strong> <a href="tel:+917017818266" className="text-blue-600 underline">+91 70178 18266</a>
-        <br />
-         <strong>Whatsapp:</strong> <a href="tel:+917987615111" className="text-blue-600 underline">+91 79876 15111</a>
-        <br />
-        <strong>Email:</strong> <a href="mailto:yokofashion.yk@gmail.com" className="text-blue-600 underline">yokofashion.yk@gmail.com</a>
-      </div>
-    </section>
+      <h2 className="text-2xl font-bold mb-3 text-luxury-gold">Terms and Conditions</h2>
+      <div className="text-lg leading-relaxed space-y-3">
+        <p>Welcome to Yoko Watches (“we,” “our,” or “us”). By accessing or using our website, you agree to comply with and be bound by these Terms and Conditions.</p>
 
-    <section className="mb-8">
-      <h2 className="text-2xl font-bold mb-3 text-luxury-gold">Shipping Policy</h2>
-      <div className="text-lg leading-relaxed">
-        We process and ship orders within 3-4 business days. Delivery times may vary based on your location. Tracking details will be provided once your order is shipped. We are not responsible for delays caused by courier services or unforeseen circumstances.
-      </div>
-    </section>
+        <p><strong>1. Use of the Website</strong><br />
+        You must be at least 18 years old or accessing the site under the supervision of a parent or legal guardian.<br />
+        You agree not to misuse the website for fraudulent or unlawful activity.</p>
 
-    <section className="mb-8">
-      <h2 className="text-2xl font-bold mb-3 text-luxury-gold">Terms & Conditions</h2>
-      <ul className="list-disc pl-6 text-lg leading-relaxed space-y-2">
-        <li>By accessing or using our website, you agree to comply with and be bound by these terms and conditions.</li>
-        <li>All products are subject to availability. We reserve the right to limit quantities or discontinue any product at any time.</li>
-        <li>Prices for our products are subject to change without notice. We are not liable for any price changes or product unavailability.</li>
-        <li>All product descriptions and images are for informational purposes only. Actual products may vary slightly.</li>
-        <li>We reserve the right to refuse service to anyone for any reason at any time.</li>
-        <li>By placing an order, you confirm that all information provided is accurate and complete.</li>
-        <li>All payments are processed securely via Razorpay. We do not store your payment information.</li>
-        <li>Any disputes arising from your use of our website or purchase of products will be governed by the laws of India.</li>
-      </ul>
-    </section>
+        <p><strong>2. Products</strong><br />
+        We make every effort to display accurate images and descriptions of our watches.<br />
+        Prices and availability are subject to change without notice.</p>
 
-    <section className="mb-8">
-      <h2 className="text-2xl font-bold mb-3 text-luxury-gold">Cancellation & Refunds</h2>
-      <div className="text-lg leading-relaxed">
-        Orders can be cancelled within 24 hours of placement. To cancel, contact us via phone or email. Refunds are processed within 7 business days after cancellation or return approval. Products must be unused and in original packaging for returns. Shipping charges are non-refundable.
+        <p><strong>3. Orders</strong><br />
+        We reserve the right to refuse or cancel any order at our discretion.<br />
+        You will receive an order confirmation after successful payment.</p>
+
+        <p><strong>4. Payments</strong><br />
+        Payments are accepted via secure online payment gateways.<br />
+        Prices are listed in INR (or your preferred currency if applicable) and are inclusive of applicable taxes.</p>
+
+        <p><strong>5. Intellectual Property</strong><br />
+        All content, including images, text, logos, and designs, is the property of Yoko Watches and may not be used without permission.</p>
+
+        <p><strong>6. Limitation of Liability</strong><br />
+        We are not liable for indirect or consequential damages arising from the use of our products or website.</p>
+
+        <p><strong>7. Governing Law</strong><br />
+        These terms are governed by the laws of India.</p>
       </div>
     </section>
 
     <section className="mb-8">
       <h2 className="text-2xl font-bold mb-3 text-luxury-gold">Privacy Policy</h2>
-      <div className="text-lg leading-relaxed">
-        We value your privacy. Your personal information is used only for order processing and communication. We do not share your data with third parties except as required for payment and delivery. All payments are securely processed via Razorpay.
+      <div className="text-lg leading-relaxed space-y-3">
+        <p>Your privacy is important to us. This policy explains how we collect, use, and protect your personal information.</p>
+
+        <p><strong>Information We Collect</strong><br />
+        Name, contact number, email, shipping address.<br />
+        Payment details (processed through secure third-party gateways).<br />
+        Browsing behavior using cookies and analytics tools.</p>
+
+        <p><strong>How We Use Your Information</strong><br />
+        To process orders and provide customer service.<br />
+        To send order updates, promotional offers, or newsletters (with consent).<br />
+        To improve our website and services.</p>
+
+        <p><strong>Data Security</strong><br />
+        Your data is protected using SSL encryption and secure servers.<br />
+        We never sell or rent your personal information.</p>
+
+        <p><strong>Third-Party Services</strong><br />
+        Payment gateways and shipping partners may have access to necessary personal data for order fulfillment.</p>
+
+        <p><strong>Cookies</strong><br />
+        We use cookies to enhance user experience and for analytics.</p>
+
+        <p><strong>Your Rights</strong><br />
+        You can request access, modification, or deletion of your personal data by contacting us.</p>
+      </div>
+    </section>
+
+    <section className="mb-8">
+      <h2 className="text-2xl font-bold mb-3 text-luxury-gold">Return & Refund Policy</h2>
+      <div className="text-lg leading-relaxed space-y-3">
+        <p>We offer a 5–7 day return policy, which means you have 5 to 7 days after receiving your item to request a return.</p>
+        <p>To be eligible for a return, your item must be in the same condition that you received it—unworn or unused, with tags, and in its original packaging.</p>
+        <p>Once we receive and inspect your return, we’ll notify you regarding the status of your refund.</p>
+        <p>If approved, your refund will be automatically processed to your original payment method within 7 business days.</p>
+
+        <p><strong>Damaged, Defective, Leaked, or Spilled Products</strong></p>
+        <ul className="list-disc pl-6 space-y-1">
+          <li>A return request must be raised within 7 days of delivery.</li>
+          <li>We will arrange a return pickup within 7 days from the delivery date.</li>
+          <li>If you opt for a replacement, the product will be delivered within 7–10 business days.</li>
+          <li>If a refund is approved, it will be automatically credited to your original payment method within 7 business days.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section className="mb-8">
+      <h2 className="text-2xl font-bold mb-3 text-luxury-gold">Shipping Policy</h2>
+      <div className="text-lg leading-relaxed space-y-3">
+        <p><strong>Shipping Time</strong><br />
+        Orders are processed within 1–2 business days.<br />
+        Products will be delivered within 3–7 business days for domestic orders.</p>
+
+        <p><strong>Delays</strong><br />
+        We are not responsible for shipping delays caused by courier partners or natural events.</p>
       </div>
     </section>
   </div>

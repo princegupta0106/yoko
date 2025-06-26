@@ -73,6 +73,10 @@ const ProductDetail = () => {
   const itemTotal = product.price * quantity;
   const otherChargesPerQty = getOtherCharges() * quantity;
   const finalTotal = itemTotal + shippingCharge + otherChargesPerQty;
+  
+  // Debug log for product data
+  console.log("Product detail data:", product);
+  console.log("Product images:", product.images);
 
   return (
     <div className="min-h-screen bg-gray-50">
