@@ -30,7 +30,7 @@ const Index = () => {
  <span className="text-luxury-gold"> Yoko</span>
             </h1>
             <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-              Your go-to destination for stylish clothing, premium master copy watches, and the latest gadgets – all in one place. Elevate your lifestyle with Yoko.
+              Elevate your lifestyle with yoko, premium master copy watches, and the latest gadgets – all in one place. Elevate your lifestyle with Yoko.
             </p>
             <Button 
               onClick={() => navigate('/products')}
