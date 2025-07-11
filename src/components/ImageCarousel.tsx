@@ -10,9 +10,6 @@ interface ImageCarouselProps {
 
 const ImageCarousel = ({ images, alt }: ImageCarouselProps) => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  
-  // Debug log to check images
-  console.log("ImageCarousel received images:", images);
 
   const goToPrevious = () => {
     setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));

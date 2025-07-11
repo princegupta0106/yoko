@@ -43,7 +43,7 @@ serve(async (req) => {
       const razorpayOrderResponse = await fetch('https://api.razorpay.com/v1/orders', {
         method: 'POST',
         headers: {
-          'Authorization': `Basic ${btoa('rzp_test_PBM2Y93ANCIoG2:d5cwiAvh98MH4deTvSfEqMH5')}`,
+          'Authorization': `Basic ${btoa('rzp_live_UiXsNumOJZS8XB:YiW7FwStmFtk1uEn0t2BGfKj')}`,
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
@@ -83,7 +83,7 @@ serve(async (req) => {
           orderId: order.id,
           amount: razorpayOrder.amount,
           currency: razorpayOrder.currency,
-          key: 'rzp_test_PBM2Y93ANCIoG2'
+          key: 'rzp_live_UiXsNumOJZS8XB'
         }),
         {
           headers: { ...corsHeaders, 'Content-Type': 'application/json' },
@@ -99,7 +99,7 @@ serve(async (req) => {
       const razorpayOrderResponse = await fetch('https://api.razorpay.com/v1/orders', {
         method: 'POST',
         headers: {
-          'Authorization': `Basic ${btoa('rzp_test_PBM2Y93ANCIoG2:d5cwiAvh98MH4deTvSfEqMH5')}`,
+          'Authorization': `Basic ${btoa('rzp_live_UiXsNumOJZS8XB:YiW7FwStmFtk1uEn0t2BGfKj')}`,
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
@@ -167,7 +167,7 @@ serve(async (req) => {
           orderId: order.id,
           amount: razorpayOrder.amount,
           currency: razorpayOrder.currency,
-          key: 'rzp_test_PBM2Y93ANCIoG2'
+          key: 'rzp_live_UiXsNumOJZS8XB'
         }),
         {
           headers: { ...corsHeaders, 'Content-Type': 'application/json' },
